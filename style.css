@@ -1,0 +1,51 @@
+body{
+    background-color:#FAF6ED;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 100px 2fr 1fr;
+}
+
+section{
+    grid-column: 2/-1;
+}
+
+
+.cabecalho{
+    height: 80px;
+    width: 100%;
+    background-color: #fb5;
+    grid-column: 3/-1;
+    margin: 20px 0px;
+}
+
+.cabecalho ul{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+   
+
+}
+
+.cabecalho ul li{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+.cabecalho ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 500;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+}
+
+.introducao h1{
+    font-size: 8em;
+
+    font-family: 'Azeret Mono', monospace;
+}
