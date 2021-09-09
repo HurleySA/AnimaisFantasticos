@@ -53,3 +53,15 @@ copy.addEventListener('click', () => {
         behavior:'smooth'
     })
 })
+
+const sections = [...document.querySelectorAll(".grid-section")];
+sections.forEach((section) => {
+    window.addEventListener('scroll', ()=> {
+        if(section.getBoundingClientRect().top < 720){
+            section.style.opacity = '1';
+        } else{
+            section.style.opacity = '0'; 
+        };
+        
+    })
+})

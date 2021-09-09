@@ -46,6 +46,7 @@ body {
 }
 
 .grid-section {
+    transition: 0.5s;
     grid-column: 2/4;
     width: 100%;
     padding: 10px;
