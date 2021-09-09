@@ -58,6 +58,7 @@ body {
 .titulo {
     grid-column: 1/4;
     font-size: 8em;
+    margin-bottom: 50px;
 }
 
 
@@ -120,6 +121,24 @@ body {
     background-color: #FFBB55;
 }
 
+.numeros ul {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.numeros ul li{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+.numeros ul li span{
+    color: #EF6757;
+}
+
+
 .faq-lista {
     grid-column: 2/4;
 }
@@ -179,7 +198,36 @@ body {
     }
 }
 
+.contato .mapa{
+    grid-column: 2;
+}
+
+.contato .dados li {
+    padding-bottom: 15px;
+    font-size: 1.2em;
+    
+}
+
+.contato .dados li::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #FFBB55;
+}
 
 .copy{
-    grid-column: 1/4;
+    grid-column: 3/5;
+    height: 60px;
+    margin: 20px 0px;
+    width: 100%;
+    background-color: #FFBB55;
+    
+}
+
+.copy p{
+    margin: 20px;
+    font-size: 1.1em;
+    font-weight: 700;
 }
