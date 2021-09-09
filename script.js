@@ -17,3 +17,20 @@ li_animais.forEach((animal, index) => {
     animal.addEventListener('click', () => modificaDesc(index));
 })
 
+
+
+const dt_faq = [...document.querySelectorAll(".faq-lista dt")];
+const dd_faq = [...document.querySelectorAll(".faq-lista dd")];
+
+const modificaFaq = (index) =>{
+    dt_faq.forEach((faq, indexDesc) => {
+        if(index === indexDesc){
+            faq.classList.toggle("active")
+        }
+    })  
+}
+
+dt_faq.forEach((element, index) => {
+    element.addEventListener('click', () => {modificaFaq(index)
+    })
+})

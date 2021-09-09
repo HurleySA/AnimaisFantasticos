@@ -88,7 +88,7 @@ body {
     display: none;
 }
 
-@keyframes aparece {
+@keyframes showRight {
     0% {
         opacity: 0;
         margin-left: -20px
@@ -101,7 +101,7 @@ body {
 
 .animais-descricao section.active{
     display: block;
-    animation: aparece 0.4s ease-out forwards;
+    animation: showRight 0.4s ease-out forwards;
 }
 
 .animais-descricao section h2{
@@ -120,3 +120,66 @@ body {
     background-color: #FFBB55;
 }
 
+.faq-lista {
+    grid-column: 2/4;
+}
+
+.faq-lista dt {
+    color: #EF6757;
+    padding: 15px 0px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.faq-lista dt::after{
+    content: '';
+    display: inline-block;
+    border-left: 10px solid #faf6ed;
+    border-right: 10px solid #faf6ed;
+    border-top: 10px solid transparent;
+    background-color: #EF6757;
+    transform: rotate(-90deg);
+}
+
+.faq-lista dt.active::after{
+    transform: rotate(0deg);
+    transition: ease-in-out .4s;
+}
+.faq-lista dt::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #FFBB55;
+}
+
+.faq-lista dd{
+    display: none;
+
+}
+
+.faq-lista dt.active + dd {
+    display: block;
+    animation: showDown .4s ease-in-out forwards;
+}
+
+
+
+@keyframes showDown {
+    0% {
+        opacity: 0;
+        margin-top: -20px
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+
+.copy{
+    grid-column: 1/4;
+}
